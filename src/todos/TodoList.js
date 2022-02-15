@@ -8,7 +8,7 @@ const TodoList = ({ todos = [] }) => (
 
     <div className="list-wrapper">
         <NewTodoForm />
-        {todo.map(todo => <TodoListItem todo={todo} /> )}
+        {todos.map(todo => <TodoListItem todo={todo} /> )}
     </div>
 );
 
