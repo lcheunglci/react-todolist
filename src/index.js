@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 import App from './App.js';
-import {Provider} from 'redux';
-import {configureStore} from './store';
-import { config } from 'webpack';
 
+import {configureStore} from './store';
 
 ReactDOM.render(
     <Provider store={configureStore()}>
