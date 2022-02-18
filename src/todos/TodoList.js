@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import NewTodoForm from './NewTodoForm';
 import TodoListItem from './TodoListItem';
 import './TodoList.css';
-import { loadTodos, removeTodoRequest, completeTodoRequest } from '../thunks';
+import { loadTodos, removeTodoRequest, completeTodoRequest } from './thunks';
 
 const TodoList = ({ todos = [], onRemovePressed, onCompletedPressed, isLoading, startLoadingTodos }) => {
 
